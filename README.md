@@ -1,3 +1,3 @@
 - Yaroslav
 - Fergie
-- Irteza
+- Irteza Rasheed
