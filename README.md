@@ -1,3 +1,3 @@
 - Fergie Gorospe
 - Yaroslav Guerra
-- Irteza
+- Irteza Rasheed
