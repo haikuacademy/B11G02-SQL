@@ -1,3 +1,3 @@
-- Yaroslav
+- Yaroslav Guerra
 - Fergie
 - Irteza Rasheed
