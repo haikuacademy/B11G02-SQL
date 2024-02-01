@@ -1,8 +1,8 @@
 
 -- CREATE BOOKING
 
-INSERT INTO bookings (booking_id, user_id, house_id, check_in, check_out, total_price, booked_on)
-VALUES (5, 5, 5, '2024-01-31', '2024-02-10', 25, LOCALTIMESTAMP);
+INSERT INTO bookings (user_id, house_id, check_in, check_out, total_price)
+VALUES (5, 5, '2024-01-31', '2024-02-10', 25);
 
 -- READ BOOKING
 
