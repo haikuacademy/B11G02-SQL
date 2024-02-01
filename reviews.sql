@@ -10,7 +10,7 @@ SELECT * FROM reviews
 WHERE review_id = 4;
 
 -- Joins with users table, DATA NEEDED: users.first_name, users.last_name, users.profile_picture
-SELECT reviews.rating, reviews.review, reviews.user_id, reviews.house_id, users.first_name, users.last_name, users.profile_picture from reviews
+SELECT reviews.rating, reviews.review, users.first_name, users.last_name, users.profile_picture from reviews
 LEFT JOIN users
 ON users.user_id = reviews.review_id
 WHERE house_id = 1
