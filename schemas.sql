@@ -22,9 +22,6 @@ CREATE TABLE bookings (
     check_in TIMESTAMP,
     check_out TIMESTAMP,
     total_price FLOAT,
-    booking_status VARCHAR(50),
-    payment_method VARCHAR(50),
-    payment_status VARCHAR(50),
     booked_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -41,6 +38,7 @@ CREATE TABLE reviews (
     review_id SERIAL PRIMARY KEY,
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     review TEXT,
+    rating FLOAT NOT NULL,
     user_id INT NOT NULL REFERENCES users(user_id),
     house_id INT NOT NULL REFERENCES houses(house_id)
 );
