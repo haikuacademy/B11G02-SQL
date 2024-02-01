@@ -1,11 +1,13 @@
+-- Add a new review
 INSERT INTO reviews (review, user_id, house_id)
 VALUES ('Great outdoor shower when it rains', 5, 1);
 
+-- Update a review
 UPDATE reviews
 SET review = 'Updated - Great outdoor shower when it rains'
 WHERE review_id = 2;
 
-
+-- Read reviews
 SELECT * FROM reviews
 WHERE review_id = 4;
 
