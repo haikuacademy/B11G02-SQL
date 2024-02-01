@@ -7,6 +7,7 @@ SELECT users.first_name, users.last_name, houses_pictures.photo_url, houses.loca
 INNER JOIN houses ON users.user_id = houses.user_id
 INNER JOIN houses_pictures ON houses.house_id = houses_pictures.house_id
 INNER JOIN reviews ON reviews.review_id = users.user_id
+WHERE house_id = 2
 
 -- Query to Update a house
 UPDATE houses 
