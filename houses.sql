@@ -6,7 +6,7 @@ VALUES ('koh lipe', 140, 2, 1, 'Such a nice room with beautifull sea view, bunch
 SELECT users.first_name, users.last_name, houses_pictures.photo_url, houses.location, houses.price_per_night, houses.bedroom, houses.bathroom, houses.description, reviews.date, reviews.review FROM users 
 INNER JOIN houses ON users.user_id = houses.user_id
 INNER JOIN houses_pictures ON houses.house_id = houses_pictures.house_id
-INNER JOIN reviews ON reviews.review_id = users.user_id
+INNER JOIN reviews ON reviews.user_id = users.user_id
 WHERE house_id = 2
 
 -- Query to Update a house
